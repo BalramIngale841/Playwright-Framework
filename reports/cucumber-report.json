@@ -1,0 +1,259 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "add-product-to-cart;user-adds-product-to-cart-from-dashboard",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "User adds product to cart from dashboard",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 282795599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user logs in as \"standard\"",
+            "match": {
+              "location": "src\\steps\\Login.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 666649300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user adds \"Sauce Labs Backpack\" to cart",
+            "match": {
+              "location": "src\\steps\\AddToCart.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134994900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "product should be added to cart successfully",
+            "match": {
+              "location": "src\\steps\\AddToCart.steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12989700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 185475900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-product-to-cart",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add product to cart",
+    "tags": [],
+    "uri": "features\\AddToCart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-flow;user-completes-checkout-successfully",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "User completes checkout successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 147828199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user logs in as \"standard\"",
+            "match": {
+              "location": "src\\steps\\Login.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1068820400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "user adds \"Sauce Labs Backpack\" to cart",
+            "match": {
+              "location": "src\\steps\\AddToCart.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114729299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user proceeds to checkout",
+            "match": {
+              "location": "src\\steps\\Checkout.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57045099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user provides checkout details",
+            "match": {
+              "location": "src\\steps\\Checkout.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125527000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user confirms the order",
+            "match": {
+              "location": "src\\steps\\Checkout.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58106800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "order should be placed successfully",
+            "match": {
+              "location": "src\\steps\\Checkout.steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20416299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 145900999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-flow",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout flow",
+    "tags": [],
+    "uri": "features\\Checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;user-logs-in-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User logs in with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 144007399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user logs in as \"standard\"",
+            "match": {
+              "location": "src\\steps\\Login.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 612988400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "user should be redirected to dashboard",
+            "match": {
+              "location": "src\\steps\\Login.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9408499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 124946400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login functionality",
+    "tags": [],
+    "uri": "features\\Login.feature"
+  }
+]

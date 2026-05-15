@@ -1,0 +1,7 @@
+{
+    "validUser": {
+      "firstName": "Test",
+      "lastName": "User",
+      "zip": "12345"
+    }
+  }
