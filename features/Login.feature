@@ -1,4 +1,4 @@
-@testomat=T982bd719
+@testomat(982bd719)
 @LOGIN-101
 @Smoke
 Feature: Login functionality
