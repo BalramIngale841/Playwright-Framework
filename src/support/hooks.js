@@ -9,7 +9,7 @@ let browser;
 // ========================
 BeforeAll(async () => {
   browser = await chromium.launch({
-    headless: false   // change to false for debugging
+    headless: process.env.CI ? true : false // change to false for debugging
   });
 });
 
