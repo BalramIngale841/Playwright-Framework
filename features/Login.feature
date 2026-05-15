@@ -1,4 +1,5 @@
-@TC-101
+@testomat=T982bd719
+@LOGIN-101
 @Smoke
 Feature: Login functionality
 
