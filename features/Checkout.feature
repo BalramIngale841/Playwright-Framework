@@ -1,3 +1,5 @@
+@PAYMENT-103
+@Regression
 Feature: Checkout flow
 
   Background:

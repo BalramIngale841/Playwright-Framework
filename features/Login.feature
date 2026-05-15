@@ -1,3 +1,5 @@
+@TC-101
+@Smoke
 Feature: Login functionality
 
 Scenario: User logs in with valid credentials
