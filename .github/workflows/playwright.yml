@@ -33,7 +33,7 @@ jobs:
 
       - name: Upload Results to Testomat
         if: success()
-        run: npx check-cucumber reports/report.json
+        run: npx testomatio-reporter upload reports/report.json
         env:
           TESTOMATIO: ${{ secrets.TESTOMATIO }}
 
